@@ -48,7 +48,7 @@ Before running this application, ensure you have the following installed:
 ## Endpoint
 The app has only one endpoint /dev and it will return the user information inluding email, current datetime and a GitHub Url
 
-###Example
+### Example
     ```JSON
     {
   "email": "adesolaisa3@gmail.com",
@@ -56,4 +56,3 @@ The app has only one endpoint /dev and it will return the user information inlud
   "github_url": "github.com/busade/hng12-task1"
 }
 
-# hng12-task1
