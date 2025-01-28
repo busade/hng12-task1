@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from datetime import datetime
+from datetime import datetime, timedelta
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
@@ -15,7 +15,7 @@ app.add_middleware(
 @app.get('/dev')
 def search():
     email = "adesolaisa3@gmail.com"
-    current_datetime=datetime.now().isoformat()
+    current_datetime=(datetime.now()+ timedelta(hours=1)).isoformat()
     github_url ="github.com/busade/hng12-task1"
     response = {
         "email": email,
