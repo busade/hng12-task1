@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from datetime import datetime, timedelta
 from fastapi.middleware.cors import CORSMiddleware
+import pytz
 
 app = FastAPI()
 app.add_middleware(
@@ -11,11 +12,11 @@ app.add_middleware(
     allow_headers=["*"]
 )
 
-
+timezone = pytz.timezone("Africa/Lagos")
 @app.get('/')
 def search():
     email = "adesolaisa3@gmail.com"
-    current_datetime=(datetime.now()+ timedelta(hours=1)).isoformat()
+    current_datetime=(datetime.now(timezone)).isoformat()
     github_url ="github.com/busade/hng12-task1"
     response = {
         "email": email,
