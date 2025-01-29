@@ -12,7 +12,7 @@ app.add_middleware(
 )
 
 
-@app.get('/dev')
+@app.get('/')
 def search():
     email = "adesolaisa3@gmail.com"
     current_datetime=(datetime.now()+ timedelta(hours=1)).isoformat()
