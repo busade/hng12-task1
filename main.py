@@ -17,7 +17,7 @@ timezone = pytz.timezone("Africa/Lagos")
 def search():
     email = "adesolaisa3@gmail.com"
     current_datetime=(datetime.now()).isoformat()+ "Z"
-    github_url ="github.com/busade/hng12-task1"
+    github_url ="https://github.com/busade/hng12-task1"
     response = {
         "email": email,
         "current_datetime" : current_datetime,
