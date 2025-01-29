@@ -1,11 +1,11 @@
 # FastAPI Project
 
-This is a simple FastAPI project with a single `/dev` endpoint. The project also includes CORS support and auto-generated documentation.
+This is a simple FastAPI project with a single `/` endpoint. The project also includes CORS support and auto-generated documentation.
 
 ## Features
 
 - FastAPI-based web application.
-- `/dev` endpoint to return developer information.
+- `/` endpoint to return developer information.
 - Automatically generated Swagger and ReDoc documentation.
 - CORS enabled for cross-origin requests.
 
